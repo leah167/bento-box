@@ -1,0 +1,58 @@
+#box {
+    height: 600px;
+    width: 800px;
+    font-size: 3em;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(5, 20%);
+    grid-template-areas: 
+    "fish-flag fish-flag fish-flag vase-short"
+    "map map map vase-short"
+    "vase-tall bamboo bamboo bamboo"
+    "vase-tall bamboo bamboo bamboo"
+    "vase-tall quad quad quad"
+    ;
+  } 
+  
+  img {
+      border: 1px solid black;
+      width: 100%;
+      height: 100%;
+  }
+
+  #fish-flag {
+    grid-area: fish-flag;
+    object-fit: cover;
+    border: 1px solid black;
+    
+  }
+
+  #map {
+    grid-area: map;
+    object-fit: cover;
+    border: 1px solid black;
+  }
+  
+  #vase-short {
+    grid-area: vase-short;
+    object-fit: cover;
+    border: 1px solid black;
+  }
+
+  #vase-tall {
+    grid-area: vase-tall;
+    object-fit: cover;
+    border: 1px solid black;
+  }
+
+  #bamboo {
+    grid-area: bamboo;
+    object-fit: cover;
+    border: 1px solid black;
+  }
+
+  #quad {
+    grid-area: quad;
+    object-fit: cover;
+    border: 1px solid black;
+  }
